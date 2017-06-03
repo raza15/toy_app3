@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+</head>
+<body>
+<section class="container">
+  <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <center><h1><span class="fa fa-lock"></span>  Distributed Cloud Storage of Files</span></h1></center>
+  </nav><br><br><br><br><br><br>
+
+
+<p id="notice"><%= notice %></p>
+
+<% if(@user.id == current_user.id) %>
+
+	<p>Welcome user # <%= @user.id %></p>
+	<p>
+	  <strong>Email:</strong>
+	  <%= @user.email %>
+	</p>
+
+	<p>
+	  <strong>Password:</strong>
+	  <%= @user.password %>
+	</p>
+
+	<%= link_to 'Edit', edit_user_path(@user) %> |
+	<%= link_to 'Back', users_path %> |
+	<%= link_to "Log out", logout_path, method: "delete" %>
+<% elsif(current_user.id==nil) %>
+	<p>Dude. You're not logged in.</p>
+	<%= link_to 'Go to Login Page', login_path %>
+<%else%>
+	<p>Dude. This is not your profile.</p>
+	<%= link_to 'Go back to your Profile', user_path(current_user) %>	
+<%end%>
+
+</section>
+</body>
+</html>
