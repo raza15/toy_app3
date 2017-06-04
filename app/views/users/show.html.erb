@@ -8,9 +8,8 @@
 <body>
 <section class="container">
   <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
-    <center><h1><span class="fa fa-lock"></span>  Distributed Cloud Storage of Files</span></h1></center>
+    <center><h1><span class="fa fa-lock"></span>  </span></h1></center>
   </nav><br><br><br><br><br><br>
-
 
 <p id="notice"><%= notice %></p>
 
@@ -31,8 +30,9 @@
 	<br>
 	<td><%= button_to "Fill out Family Background",  new_family_background_path, method: :get, class: "btn btn-primary", style:"color:white"%></td>
 	<br>
-	<td><%= button_to "Fill out Sibling Background",  new_family_background_path, method: :get, class: "btn btn-primary", style:"color:white"%></td>
-
+	<td><%= button_to "Fill out Sibling Background",  new_sibling_background_path, method: :get, class: "btn btn-primary", style:"color:white"%></td>
+	<br>
+	<td><%= button_to "Fill out Educational Background",  new_sibling_background_path, method: :get, class: "btn btn-primary", style:"color:white"%></td>
 
 	<br>
 	<%= link_to 'Edit', edit_user_path(@user) %> |

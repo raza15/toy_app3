@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sibling Backgrounds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Sibling name</th>
+      <th>Sibling age</th>
+      <th>Sibling marital status</th>
+      <th>Sibling residence</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sibling_backgrounds.each do |sibling_background| %>
+      <tr>
+        <td><%= sibling_background.user_id %></td>
+        <td><%= sibling_background.sibling_name %></td>
+        <td><%= sibling_background.sibling_age %></td>
+        <td><%= sibling_background.sibling_marital_status %></td>
+        <td><%= sibling_background.sibling_residence %></td>
+        <td><%= link_to 'Show', sibling_background %></td>
+        <td><%= link_to 'Edit', edit_sibling_background_path(sibling_background) %></td>
+        <td><%= link_to 'Destroy', sibling_background, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sibling Background', new_sibling_background_path %>

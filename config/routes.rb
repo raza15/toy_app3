@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :sibling_backgrounds
   resources :family_backgrounds
   resources :personal_backgrounds
   get 'sessions/new'

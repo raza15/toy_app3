@@ -1,0 +1,2 @@
+class SiblingBackground < ApplicationRecord
+end

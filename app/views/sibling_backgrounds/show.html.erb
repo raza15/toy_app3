@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @sibling_background.user_id %>
+</p>
+
+<p>
+  <strong>Sibling name:</strong>
+  <%= @sibling_background.sibling_name %>
+</p>
+
+<p>
+  <strong>Sibling age:</strong>
+  <%= @sibling_background.sibling_age %>
+</p>
+
+<p>
+  <strong>Sibling marital status:</strong>
+  <%= @sibling_background.sibling_marital_status %>
+</p>
+
+<p>
+  <strong>Sibling residence:</strong>
+  <%= @sibling_background.sibling_residence %>
+</p>
+
+<%= link_to 'Edit', edit_sibling_background_path(@sibling_background) %> |
+<%= link_to 'Back', sibling_backgrounds_path %>

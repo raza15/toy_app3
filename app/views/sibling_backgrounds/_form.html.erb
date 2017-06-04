@@ -1,0 +1,42 @@
+<%= form_for(sibling_background) do |f| %>
+  <% if sibling_background.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sibling_background.errors.count, "error") %> prohibited this sibling_background from being saved:</h2>
+
+      <ul>
+      <% sibling_background.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<!--   <div class="field">
+    <%= f.label :user_id %>
+    <%= f.number_field :user_id %>
+  </div> -->
+
+  <div class="field">
+    <%= f.label :sibling_name %>
+    <%= f.text_field :sibling_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sibling_age %>
+    <%= f.number_field :sibling_age %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sibling_marital_status %>
+    <%= f.text_field :sibling_marital_status %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sibling_residence %>
+    <%= f.text_field :sibling_residence %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

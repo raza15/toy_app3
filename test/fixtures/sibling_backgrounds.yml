@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  sibling_name: MyString
+  sibling_age: 1
+  sibling_marital_status: MyString
+  sibling_residence: MyString
+
+two:
+  user_id: 1
+  sibling_name: MyString
+  sibling_age: 1
+  sibling_marital_status: MyString
+  sibling_residence: MyString

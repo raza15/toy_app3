@@ -1,0 +1,1 @@
+json.array! @sibling_backgrounds, partial: 'sibling_backgrounds/sibling_background', as: :sibling_background
