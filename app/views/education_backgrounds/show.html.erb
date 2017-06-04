@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @education_background.user_id %>
+</p>
+
+<p>
+  <strong>Highest education level:</strong>
+  <%= @education_background.highest_education_level %>
+</p>
+
+<p>
+  <strong>University of highest education level:</strong>
+  <%= @education_background.university_of_highest_education_level %>
+</p>
+
+<%= link_to 'Edit', edit_education_background_path(@education_background) %> |
+<%= link_to 'Back', education_backgrounds_path %>

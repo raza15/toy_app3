@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170604163544) do
+ActiveRecord::Schema.define(version: 20170604192942) do
+
+  create_table "education_backgrounds", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "highest_education_level"
+    t.string   "university_of_highest_education_level"
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
+  end
 
   create_table "family_backgrounds", force: :cascade do |t|
     t.integer  "user_id"
@@ -34,6 +42,13 @@ ActiveRecord::Schema.define(version: 20170604163544) do
     t.string   "current_job_title"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+  end
+
+  create_table "resumes", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "attachment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "sibling_backgrounds", force: :cascade do |t|

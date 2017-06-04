@@ -1,0 +1,1 @@
+json.partial! "education_backgrounds/education_background", education_background: @education_background

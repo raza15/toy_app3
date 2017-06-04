@@ -1,0 +1,2 @@
+module EducationBackgroundsHelper
+end

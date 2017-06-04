@@ -1,0 +1,2 @@
+json.extract! education_background, :id, :user_id, :highest_education_level, :university_of_highest_education_level, :created_at, :updated_at
+json.url education_background_url(education_background, format: :json)

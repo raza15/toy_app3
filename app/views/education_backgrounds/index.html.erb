@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Education Backgrounds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Highest education level</th>
+      <th>University of highest education level</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @education_backgrounds.each do |education_background| %>
+      <tr>
+        <td><%= education_background.user_id %></td>
+        <td><%= education_background.highest_education_level %></td>
+        <td><%= education_background.university_of_highest_education_level %></td>
+        <td><%= link_to 'Show', education_background %></td>
+        <td><%= link_to 'Edit', edit_education_background_path(education_background) %></td>
+        <td><%= link_to 'Destroy', education_background, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Education Background', new_education_background_path %>

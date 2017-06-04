@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+  get 'resumes/index'
+
+  get 'resumes/new'
+
+  get 'resumes/create'
+
+  get 'resumes/destroy'
+
+  resources :resumes, only: [:index, :new, :create, :destroy]
+
+  resources :education_backgrounds
   resources :sibling_backgrounds
   resources :family_backgrounds
   resources :personal_backgrounds

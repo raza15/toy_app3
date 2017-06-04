@@ -1,0 +1,32 @@
+<%= form_for(education_background) do |f| %>
+  <% if education_background.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(education_background.errors.count, "error") %> prohibited this education_background from being saved:</h2>
+
+      <ul>
+      <% education_background.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<!--   <div class="field">
+    <%= f.label :user_id %>
+    <%= f.number_field :user_id %>
+  </div> -->
+
+  <div class="field">
+    <%= f.label :highest_education_level %>
+    <%= f.text_field :highest_education_level %>
+  </div>
+
+  <div class="field">
+    <%= f.label :university_of_highest_education_level %>
+    <%= f.text_field :university_of_highest_education_level %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
