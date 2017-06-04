@@ -27,6 +27,14 @@
 	  <%= @user.password %>
 	</p>
 
+	<td><%= button_to "Fill out Personal Background",  new_personal_background_path, method: :get, class: "btn btn-primary", style:"color:white"%></td>
+	<br>
+	<td><%= button_to "Fill out Family Background",  new_family_background_path, method: :get, class: "btn btn-primary", style:"color:white"%></td>
+	<br>
+	<td><%= button_to "Fill out Sibling Background",  new_family_background_path, method: :get, class: "btn btn-primary", style:"color:white"%></td>
+
+
+	<br>
 	<%= link_to 'Edit', edit_user_path(@user) %> |
 	<%= link_to 'Back', users_path %> |
 	<%= link_to "Log out", logout_path, method: "delete" %>

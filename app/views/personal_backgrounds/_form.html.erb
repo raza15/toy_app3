@@ -1,0 +1,62 @@
+<%= form_for(personal_background) do |f| %>
+  <% if personal_background.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(personal_background.errors.count, "error") %> prohibited this personal_background from being saved:</h2>
+
+      <ul>
+      <% personal_background.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<!--   <div class="field">
+    <%= f.label :user_id %>
+    <%= f.number_field :user_id %>
+  </div> -->
+
+  <div class="field">
+    <%= f.label :date_of_birth %>
+    <%= f.datetime_select :date_of_birth %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age %>
+    <%= f.number_field :age %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :home_addess %>
+    <%= f.text_field :home_addess %>
+  </div>
+
+  <div class="field">
+    <%= f.label :current_employer %>
+    <%= f.text_field :current_employer %>
+  </div>
+
+  <div class="field">
+    <%= f.label :current_job_title %>
+    <%= f.text_field :current_job_title %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

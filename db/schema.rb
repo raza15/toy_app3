@@ -10,7 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161022085218) do
+ActiveRecord::Schema.define(version: 20170604023621) do
+
+  create_table "family_backgrounds", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "my_current_occupaion"
+    t.string   "father_current_occupation"
+    t.string   "mother_current_occupation"
+    t.integer  "number_of_siblings"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
+  create_table "personal_backgrounds", force: :cascade do |t|
+    t.integer  "user_id"
+    t.datetime "date_of_birth"
+    t.integer  "age"
+    t.string   "gender"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "home_addess"
+    t.string   "current_employer"
+    t.string   "current_job_title"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email"

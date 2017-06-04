@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Personal Backgrounds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Date of birth</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Home addess</th>
+      <th>Current employer</th>
+      <th>Current job title</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @personal_backgrounds.each do |personal_background| %>
+      <tr>
+        <td><%= personal_background.user_id %></td>
+        <td><%= personal_background.date_of_birth %></td>
+        <td><%= personal_background.age %></td>
+        <td><%= personal_background.gender %></td>
+        <td><%= personal_background.email %></td>
+        <td><%= personal_background.phone %></td>
+        <td><%= personal_background.home_addess %></td>
+        <td><%= personal_background.current_employer %></td>
+        <td><%= personal_background.current_job_title %></td>
+        <td><%= link_to 'Show', personal_background %></td>
+        <td><%= link_to 'Edit', edit_personal_background_path(personal_background) %></td>
+        <td><%= link_to 'Destroy', personal_background, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Personal Background', new_personal_background_path %>

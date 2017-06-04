@@ -1,0 +1,2 @@
+class PersonalBackground < ApplicationRecord
+end

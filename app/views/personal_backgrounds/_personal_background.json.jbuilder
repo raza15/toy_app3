@@ -1,0 +1,2 @@
+json.extract! personal_background, :id, :user_id, :date_of_birth, :age, :gender, :email, :phone, :home_addess, :current_employer, :current_job_title, :created_at, :updated_at
+json.url personal_background_url(personal_background, format: :json)

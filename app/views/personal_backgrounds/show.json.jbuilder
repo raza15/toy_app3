@@ -1,0 +1,1 @@
+json.partial! "personal_backgrounds/personal_background", personal_background: @personal_background

@@ -1,0 +1,2 @@
+class FamilyBackground < ApplicationRecord
+end

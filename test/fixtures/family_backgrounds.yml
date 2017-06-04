@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  my_current_occupaion: MyString
+  father_current_occupation: MyString
+  mother_current_occupation: MyString
+  number_of_siblings: 1
+
+two:
+  user_id: 1
+  my_current_occupaion: MyString
+  father_current_occupation: MyString
+  mother_current_occupation: MyString
+  number_of_siblings: 1

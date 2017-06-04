@@ -1,0 +1,1 @@
+json.partial! "family_backgrounds/family_background", family_background: @family_background

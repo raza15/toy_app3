@@ -1,0 +1,2 @@
+json.extract! family_background, :id, :user_id, :my_current_occupaion, :father_current_occupation, :mother_current_occupation, :number_of_siblings, :created_at, :updated_at
+json.url family_background_url(family_background, format: :json)

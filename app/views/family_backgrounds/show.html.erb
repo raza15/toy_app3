@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @family_background.user_id %>
+</p>
+
+<p>
+  <strong>My current occupaion:</strong>
+  <%= @family_background.my_current_occupaion %>
+</p>
+
+<p>
+  <strong>Father current occupation:</strong>
+  <%= @family_background.father_current_occupation %>
+</p>
+
+<p>
+  <strong>Mother current occupation:</strong>
+  <%= @family_background.mother_current_occupation %>
+</p>
+
+<p>
+  <strong>Number of siblings:</strong>
+  <%= @family_background.number_of_siblings %>
+</p>
+
+<%= link_to 'Edit', edit_family_background_path(@family_background) %> |
+<%= link_to 'Back', family_backgrounds_path %>
