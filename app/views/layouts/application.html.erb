@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ToyApp3</title>
+    <title>Shia Matrimonial</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/shim' %>
   </head>
 
   <body>
-      <div class = "container" style = "padding-top:20px;">
-         <%= yield %>
-      </div>
+    <%= render 'layouts/header' %>
+    <div class = "container" style = "padding-top:20px;">
+       <%= yield %>
+       <%= render 'layouts/footer' %>
+    </div>
   </body>
 </html>
